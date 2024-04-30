@@ -2,7 +2,7 @@ const second =document.querySelector('#sec')
 
 let startwatch;
 function start(){
-    sec = 0
+   let sec = 0
 
    startwatch = setInterval(function()  {
        sec += 1
@@ -13,4 +13,11 @@ function start(){
 function stop(){
     clearInterval(startwatch)
 
+}
+
+function reset(btn){
+    if(btn === 'reset')
+    {
+        second.innerHTML=0
+    }
 }
